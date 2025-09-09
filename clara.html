@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clara - La Traductrice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="index.html" class="back-link">← Retour</a>
+        <h1>Clara 💡</h1>
+        <p>Ta spécialiste pour rendre les consignes limpides.</p>
+    </header>
+
+    <main class="chat-container">
+        
+        <div class="chat-box">
+            <div class="message received">
+                <p>Hello ! Je suis Clara. Colle ici la consigne que tu trouves compliquée, et je te la reformule en langage humain, promis ! 😊</p>
+            </div>
+
+            <div class="input-area">
+                <textarea id="userInput" placeholder="Colle la consigne de ton prof ici..."></textarea>
+                <button id="submitBtn">Traduire !</button>
+            </div>
+            
+            <!-- Le résultat apparaîtra ici -->
+            <div id="resultArea" class="message received hidden">
+                 <!-- Le texte généré par l'IA sera injecté ici par JavaScript -->
+            </div>
+
+        </div>
+
+    </main>
+    
+    <!-- On liera notre fichier JavaScript ici (prochaine étape !) -->
+    <!-- <script src="clara.js"></script> -->
+
+</body>
+</html>
