@@ -1,0 +1,66 @@
+/* style.css */
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background: #FFF5F7; /* Un fond rose très pâle */
+    color: #444;
+    text-align: center;
+}
+
+.main-header {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #FFC3A0, #FFAFBD); /* Un joli dégradé pêche/rose */
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.main-header h1 {
+    font-family: 'Pacifico', cursive; /* Notre police "manuscrite" pour le titre */
+    font-size: 3.5rem; /* rem est une unité de taille flexible */
+    margin: 0;
+}
+
+.ai-selector {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espace entre les cartes */
+    padding: 50px;
+    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne sur mobile */
+}
+
+.ai-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px; /* Des bords bien arrondis */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* Une ombre douce pour donner du relief */
+    width: 250px;
+    cursor: pointer; /* Le curseur change pour montrer que c'est cliquable */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Une petite animation douce */
+}
+
+.ai-card:hover {
+    transform: translateY(-10px); /* L'effet de "flottement" au survol */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.ai-icon {
+    font-size: 3rem;
+}
+/* Ajouts à style.css */
+
+.coming-soon {
+    opacity: 0.6; /* On la rend un peu transparente pour montrer qu'elle n'est pas active */
+    cursor: not-allowed; /* Le curseur indique que ce n'est pas cliquable */
+}
+
+.soon-badge {
+    background: #E0E0E0;
+    color: #555;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block; /* Pour que le padding fonctionne bien */
+    margin-top: 10px;
+}
